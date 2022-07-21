@@ -1,0 +1,94 @@
+{
+    "$schema": "../chain.schema.json",
+    "chain_name": "Arkon",
+    "status": "live",
+    "network_type": "testnet",
+    "pretty_name": "Arkon",
+    "chain_id": "arkon_1678-1",
+    "bech32_prefix": "arkon",
+    "node_home": "$HOME/.arkond",
+    "genesis": {
+      "genesis_url": "https://github.com/aekram43/Arkon/blob/8ccb6fb4137df67f2816664c2f8529eca0177dfb/arkon_1678-1/genesis.json"
+    },
+    "slip44": 60,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "arkon"
+        }
+      ]
+    },
+    "codebase": {
+      "git_repo": "https://github.com/aekram43/Arkon",
+      "recommended_version": "v3.0.4",
+      "compatible_versions": ["v3.0.4"],
+      "binaries": {
+        "linux/amd64": "https://github.com/aekram43/Arkon.git",
+        "windows/amd64": "https://github.com/aekram43/Arkon/archive/refs/heads/dev.zip"
+      }
+    },
+    "peers": {
+      "seeds": [
+        {
+          "id": "dcc17a08ecccdbb2fa485d45a1667bd625089cba",
+          "address": "34.146.242.21:26656",
+          "provider": "arkon"
+        },
+        {
+          "id": "1a6adab230620edfe581b73c60d20281f96668b7",
+          "address": "34.130.3.72:26656",
+          "provider": "enigma"
+        },
+        {
+          "id": "8262f337d35fecc5d7f1d10790a24537b477f54d",
+          "address": "34.65.80.214:26656",
+          "provider": "createder"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "78581f97a813707d79fd3f6681233628585de114",
+          "address": "34.131.71.185:26656",
+          "provider": "maxion"
+        }
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "https://rpc-testnet.arkon.network/",
+          "provider": "arkon"
+        }
+      ],
+      "rest": [
+        {
+          "address": "https://apis-testnet.arkon.network/",
+          "provider": "arkon"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "https://rpc-testnet.arkon.network/",
+          "provider": "arkon"
+        }
+      ],
+      "evm-http-jsonrpc": [
+        {
+          "address": "https://rpc-testnet.arkon.network/",
+          "provider": "arkon"
+        }
+      ]
+    },
+    "explorers": [
+      {
+        "kind": "Arkscan-Tendermint",
+        "url": "https://mint-testnet.arkscan.net",
+        "tx_page": "https://mint-testnet.arkscan.net/Arkon-Testnet/tx/${txHash}"
+      },
+      {
+        "kind": "Arkscan-EVM",
+        "url": "https://testnet.arkscan.net",
+        "tx_page": "https://testnet.arkscan.net/tx/${txHash}"
+      }
+    ]
+  }
