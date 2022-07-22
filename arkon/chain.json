@@ -56,7 +56,7 @@
     "apis": {
       "rpc": [
         {
-          "address": "https://rpc-testnet.arkon.network/",
+          "address": "http://34.124.175.162:26657/",
           "provider": "arkon"
         }
       ],
@@ -68,7 +68,7 @@
       ],
       "grpc": [
         {
-          "address": "https://rpc-testnet.arkon.network/",
+          "address": "http://34.124.184.86:9090/",
           "provider": "arkon"
         }
       ],
